@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <style>
+      #navbar{
+        display: flex;
+        
+      }
+      #search_input{
+        height: 40px;
+        margin-top: 15px;
+        margin-left: 20px;
+        width: 70%;
+      }
+      #sidebar{
+        width: 10%;
+        height: 400px;
+        border: 1px solid red;
+        padding-left: 20px;
+      }
+      #results{
+        border: 1px solid red;
+        width: 80%;
+      }
+      .news{
+        height: 200px;
+        width: 95%;
+        border: 1px solid;
+        display: flex;
+        justify-content: space-between;
+      }
+      .news1{
+        height: 200px;
+        width: 12%;
+        border: 1px solid red;
+
+      }
+      .news2{
+        height: 170px;
+        width: 80%;
+        border: 1px solid red;
+
+      }
+      img{
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Give Navbar with id "navbar"  -->
+    <div id="navbar">
+      <h1><a href="#">News App</a></h1>
+        <input type="text" id="search_input" placeholder="Search News">
+      </div>
+      <div>
+      <div id="sidebar">
+        <h2>countries</h2>
+        <h3 id="in">India</h3>
+        <h3 id="ch">China</h3>
+        <h3 id="us">usa</h3>
+        <h3 id="uk">uk</h3>
+        <h3 id="nz">Newzeland</h3>
+      </div>
+      <div id="results"> </div>
+    </div>
+    </div>
+    <!-- Navbar will have input with id search_input and a link to home page i.e. index.html -->
+    <!-- Sidebar will have id "sidebar"  -->
+    <!-- Give link to top headlines of countries in sidebar with id as their country codes 
+    india :- in
+    china :- ch
+    usa :- us
+    uk : uk
+    Newzeland :- nz -->
+
+    <!-- Append results inside div with id "results"  -->
+    <!-- News divs will have class "news"  -->
+  </body>
+</html>
+<script src="./scripts/index.js"></script>
